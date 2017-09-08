@@ -20,13 +20,13 @@ git clone https://github.com/hhombergs/work_vagrant.git
 ```
 Now initialize your environment. Let's say we want to install it into  `~/work_example`
 ```bash
-              ~# cd work_vagrant
-    ~/work_vagrant# ./scripts/host/init.sh ~/work_example
-    ~/work_vagrant# echo "echo \"127.0.0.1 work.example\" >> /etc/hosts" | sudo sh
+    ~$ cd work_vagrant
+    ~/work_vagrant$ ./scripts/host/init.sh ~/work_example
+    ~/work_vagrant$ echo "echo \"127.0.0.1 work.example\" >> /etc/hosts" | sudo sh
 ```
 If you don't see any severe errors, you're good to go.
 ```
-    ~/work_vagrant# vagrant up
+    ~/work_vagrant$ vagrant up
 ```
 and your work example environment should be available under  <http://work.example:8080/>
 
@@ -50,11 +50,3 @@ These commands have to be run inside the work_vagrant repo/folder
 - `vagrant halt` - Stops it
 - `vagrant destroy` - Kills the machine and deletes all files created by vagrant
 - `vagrant ssh`- Login on virtual machine via SSH
-
-## Sidenote
-By default the Vagrant box's webserver will be reachable via port 8080.
-
-In case you don't have a local webserver running and want to use the default port 80, open the `Vagrantfile` and remove or comment line 7
-
-    config.vm.network :forwarded_port, guest: 80, host: 8080
-**before** running the init script
