@@ -23,6 +23,8 @@ echo Installing dependencies...
   popd
   pushd "work_frontend"
   call npm install
- call  ./node_modules/.bin/grunt.cmd clean
+ call .\node_modules\.bin\grunt.cmd clean
+ call .\node_modules\.bin\node-sass .\src\styles\main.scss -o .\public\dist
+ call .\node_modules\.bin\webpack.cmd
   popd
 )
