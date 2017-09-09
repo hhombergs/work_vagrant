@@ -13,31 +13,30 @@ These packages must be installed and available globally in your shell
 
 
 ## Get started
-### Under Linux
 First get a copy of the environment repository
 ```
 git clone https://github.com/hhombergs/work_vagrant.git
 ```
-Now initialize your environment. Let's say we want to install it into  `~/work_example`
+### Under Linux
+Now initialize your environment.
 ```bash
     ~$ cd work_vagrant
-    ~/work_vagrant$ ./scripts/host/init.sh ~/work_example
-    ~/work_vagrant$ echo "echo \"127.0.0.1 work.example\" >> /etc/hosts" | sudo sh
+    ~/work_vagrant$ ./scripts/host/init.sh
 ```
 If you don't see any severe errors, you're good to go.
 ```
     ~/work_vagrant$ vagrant up
 ```
-and your work example environment should be available under  <http://work.example:8080/>
+and your work example environment should be available under  <http://192.168.56.101:3000/>
 
 ### Under Windows
 Basically the same as Linux, but instead of:
 ```bash
-    ~/work_vagrant# ./scripts/host/init.sh ~/work.example
+    ~/work_vagrant# ./scripts/host/init.sh
 ```
 you do:
 ```bash
-    ~/work_vagrant# ./scripts/host/init.bat c:\work.example
+    ~/work_vagrant# ./scripts/host/init.bat
 ```
 
 

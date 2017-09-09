@@ -43,7 +43,7 @@ vagrantfile:
             vflsf_j7hn0b12zwjl:
                 owner: www-data
                 group: www-data
-                source: ./work_backend
+                source: ./work_backend/web
                 target: /var/www
                 sync_type: default
                 smb:
@@ -466,4 +466,3 @@ solr:
     settings:
         version: 5.5.2
         port: '8984'
-
