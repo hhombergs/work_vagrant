@@ -1,4 +1,4 @@
-npm-debug.log
+npm-debug.log.*
 .vagrant
 puphpet/config-custom.yaml
 work_backend
