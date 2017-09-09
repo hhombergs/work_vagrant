@@ -36,7 +36,7 @@ Basically the same as Linux, but instead of:
 ```
 you do:
 ```bash
-    ~/work_vagrant# .\\scripts\\host\\init.bat
+    ~/work_vagrant# .\scripts\host\init.bat
 ```
 
 
