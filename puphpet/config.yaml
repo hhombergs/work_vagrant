@@ -43,7 +43,7 @@ vagrantfile:
             vflsf_j7hn0b12zwjl:
                 owner: www-data
                 group: www-data
-                source: ./work_backend/web
+                source: ./work_backend
                 target: /var/www
                 sync_type: default
                 smb:
@@ -130,13 +130,13 @@ nginx:
             server_name: resume.dev
             server_aliases:
                 - www.resume.dev
-            www_root: /var/www
+            www_root: /var/www/web
             listen_port: '80'
             client_max_body_size: 1m
             ssl: '0'
             locations:
                 nxvl_oj5lrx4jf7yt:
-                    www_root: /var/www
+                    www_root: /var/www/web
                     location: /
                     autoindex: 'off'
                     internal: 'false'
@@ -155,7 +155,7 @@ nginx:
                     proxy: ''
                     proxy_redirect: ''
                 nxvl_3r9pk1j9kr5p:
-                    www_root: /var/www
+                    www_root: /var/www/web
                     location: '~ ^/(app_dev|config)\.php(/|$)'
                     autoindex: 'off'
                     internal: 'false'
@@ -174,7 +174,7 @@ nginx:
                     proxy: ''
                     proxy_redirect: ''
                 nxvl_1z1at3yb6zmv:
-                    www_root: /var/www
+                    www_root: /var/www/web
                     location: '~ ^/index\.php(/|$)'
                     autoindex: 'off'
                     internal: 'false'
@@ -217,7 +217,7 @@ apache:
         version: 2.4
         user: www-data
         group: www-data
-        default_vhost: true
+        default_vhost: false
         manage_user: false
         manage_group: false
         sendfile: 0
@@ -229,7 +229,7 @@ apache:
             servername: resume.dev
             serveraliases:
                 - www.resume.dev
-            docroot: /var/www
+            docroot: /var/www/web
             port: '80'
             setenvif:
                 - 'Authorization "(.*)" HTTP_AUTHORIZATION=$1'
@@ -243,7 +243,7 @@ apache:
             ssl_cipher: ''
             directories:
                 avd_z9hq63qe0cr8:
-                    path: /var/www
+                    path: /var/www/web
                     directoryindex: 'index.php app.dev'
                     options:
                         - Indexes
