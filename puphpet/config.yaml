@@ -23,7 +23,7 @@ vagrantfile:
                         id: resumeexample
                         hostname: resume.example
                         network:
-                            private_network: 192.168.56.101
+                            public_network: 192.168.56.101
                             forwarded_port:
                                 vflmnfp_wr46vhf2h86i:
                                     host: '7684'
