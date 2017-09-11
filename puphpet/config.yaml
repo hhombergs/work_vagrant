@@ -20,14 +20,17 @@ vagrantfile:
                         update_guest_tools: 0
                 machines:
                     vflm_iqbjnnz4j3g1:
-                        id: resumeexample
+                        id: resume
                         hostname: resume.example
                         network:
-                            public_network: 192.168.56.101
+                            private_network: 192.168.56.101
                             forwarded_port:
                                 vflmnfp_wr46vhf2h86i:
                                     host: '7684'
                                     guest: '22'
+                                vflmnfp_d6slx84870ya:
+                                    host: '3000'
+                                    guest: '3000'
                         memory: '2048'
                         cpus: '1'
         provision:
@@ -89,6 +92,7 @@ server:
     packages:
         - vim
         - htop
+        - mc
 users_groups:
     install: '1'
     groups: {  }
