@@ -39,7 +39,9 @@ you do:
     ~/work_vagrant# .\scripts\host\init.bat
 ```
 
-
+Logindata:
+- Username: demo
+- Password: demo
 
 ## Main Vagrant Commands
 
