@@ -21,7 +21,7 @@ git clone https://github.com/hhombergs/work_vagrant.git
 Now initialize your environment.
 ```bash
     ~$ cd work_vagrant
-    ~/work_vagrant$ ./scripts/host/init.sh
+    ~/work_vagrant$ ./scripts/init.sh
 ```
 If you don't see any severe errors, you're good to go.
 ```
@@ -32,11 +32,11 @@ and your work example environment should be available under  <http://192.168.56.
 ### Under Windows
 Basically the same as Linux, but instead of:
 ```bash
-    ~/work_vagrant# ./scripts/host/init.sh
+    ~/work_vagrant# ./scripts/init.sh
 ```
 you do:
 ```bash
-    ~/work_vagrant# .\scripts\host\init.bat
+    ~/work_vagrant# .\scripts\init.bat
 ```
 
 ## Logindata:
