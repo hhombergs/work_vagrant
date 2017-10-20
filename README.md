@@ -7,7 +7,7 @@ These packages must be installed and available globally in your shell
 
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [Virtualbox](https://www.virtualbox.org/manual/ch02.html)
-- [Vagrant](http://docs.vagrantup.com/v2/installation/)
+- [Vagrant >= 2](http://docs.vagrantup.com/v2/installation/)
 - [Node.js + npm](https://docs.npmjs.com/getting-started/installing-node)
 - [PHP >= 7.1 + Composer](https://getcomposer.org/doc/00-intro.md)
 
